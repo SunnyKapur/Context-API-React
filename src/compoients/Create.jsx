@@ -5,7 +5,7 @@ import { toast } from "react-toastify";
 import { todocontext } from "../Wrapper";
 
 const Create = () => {
-   const [todos, settodos] = useContext(todocontext);
+  const [todos, settodos] = useContext(todocontext);
 
   const {
     register,
@@ -41,7 +41,9 @@ const Create = () => {
           className="p-2 border-b w-full text-2xl font-thin outline-0"
         />
 
-        <small className="font-thin text-red-400">{errors?.title?.message}</small>
+        <small className="font-thin text-red-400">
+          {errors?.title?.message}
+        </small>
         <br />
         <br />
         <button className="mt-5 text-xl px-10 py-2 border rounded">
