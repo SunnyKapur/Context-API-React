@@ -2,13 +2,10 @@ import { useContext } from 'react';
 import { toast } from 'react-toastify';
 import { todocontext } from '../Wrapper';
 
-const Read = (props) => {
+const Read = () => {
 
-    const s = useContext(todocontext);
-    console.log(s);
+    const [todos, settodos] = useContext(todocontext);
 
-    const todos = props.todos;
-    const settodos = props.settodos;
 
     const DeleteHandler = (id) => {
         const filtedtodo = todos.filter((todo) => todo.id != id);

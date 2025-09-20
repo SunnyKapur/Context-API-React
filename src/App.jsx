@@ -1,17 +1,13 @@
-import React, { useState } from 'react'
-import Create from './compoients/Create';
-import Read from './compoients/Read';
+import Create from "./compoients/Create";
+import Read from "./compoients/Read";
 
 const App = () => {
-  const [todos, settodos] = useState([
-    {id:1, title: "Kaam kar le bhai", isCompleted: false},
-  ]);
   return (
-    <div className='text-white flex w-screen h-screen bg-gray-600 p-10'>
-      <Create  todos={todos} settodos={settodos} />
-      <Read todos={todos} settodos={settodos} />
+    <div className="text-white flex w-screen h-screen bg-gray-600 p-10">
+      <Create />
+      <Read />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
